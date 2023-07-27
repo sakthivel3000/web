@@ -1,25 +1,455 @@
-<!DOCTYPE html>
+<!--  <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Food Donation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('https://cdn.iconscout.com/icon/free/png-256/drop-down-arrow-1767484-1502446.png') no-repeat right #fff;
+            background-size: 20px;
+            background-position: 95% 50%;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
+
 <body>
-    <img src="predtictions.jpg" alt="name" />
-    <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-      </ol>
-      
-      <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-      </ul> 
-      <button type="button">Click Me!</button> 
-    <a href="https://www.w3schools.com">Visit W3Schools.com!</a> 
+    <div class="container">
+        <h2>Food Donation Form</h2>
+        <form action="#" method="post">
+            <label for="donor-name">Donor Name:</label>
+            <input type="text" id="donor-name" name="donor-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-phone">Phone Number:</label>
+            <input type="text" id="contact-phone" name="contact-phone" required>
+
+            <label for="food-items">Food Items:</label>
+            <textarea id="food-items" name="food-items" placeholder="Please list the food items you wish to donate." required></textarea>
+
+            <label for="quantity">Quantity (in kg/lbs):</label>
+            <input type="number" id="quantity" name="quantity" min="1" step="0.1" required>
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="date" id="expiry-date" name="expiry-date" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
+
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('https://cdn.iconscout.com/icon/free/png-256/drop-down-arrow-1767484-1502446.png') no-repeat right #fff;
+            background-size: 20px;
+            background-position: 95% 50%;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Organ Donation Form</h2>
+        <form action="#" method="post">
+            <label for="donor-name">Donor Name:</label>
+            <input type="text" id="donor-name" name="donor-name" required>
+
+            <label for="donor-age">Age:</label>
+            <input type="number" id="donor-age" name="donor-age" min="18" max="99" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-phone">Phone Number:</label>
+            <input type="tel" id="contact-phone" name="contact-phone" required>
+
+            <label>Address:</label>
+            <textarea name="address" placeholder="Enter your full address" required></textarea>
+
+            <label for="organ-type">Organ Type:</label>
+            <select id="organ-type" name="organ-type" required>
+                <option value="" disabled selected>Select the organ type you wish to donate</option>
+                <option value="heart">Heart</option>
+                <option value="liver">Liver</option>
+                <option value="kidney">Kidney</option>
+                <option value="lung">Lung</option>
+                <option value="pancreas">Pancreas</option>
+                <option value="intestine">Intestine</option>
+                <option value="eye">Eye</option>
+            </select>
+
+            <label for="blood-group">Blood Group:</label>
+            <input type="text" id="blood-group" name="blood-group" required>
+
+            <label for="medical-history">Medical History:</label>
+            <textarea name="medical-history" placeholder="Please provide your medical history (if any)"></textarea>
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea name="additional-info" placeholder="Any additional information you'd like to provide"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Donation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Money Donation Form</h2>
+        <form action="#" method="post">
+            <label for="donor-name">Donor Name:</label>
+            <input type="text" id="donor-name" name="donor-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-phone">Phone Number:</label>
+            <input type="tel" id="contact-phone" name="contact-phone" required>
+
+            <label for="donation-amount">Donation Amount :</label>
+            <input type="number" id="donation-amount" name="donation-amount" min="1" step="0.01" required>
+
+            <input type="submit" value="Donate Now">
+        </form>
+    </div>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Donation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('https://cdn.iconscout.com/icon/free/png-256/drop-down-arrow-1767484-1502446.png') no-repeat right #fff;
+            background-size: 20px;
+            background-position: 95% 50%;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Clothes Donation Form</h2>
+        <form action="#" method="post">
+            <label for="donor-name">Donor Name:</label>
+            <input type="text" id="donor-name" name="donor-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-phone">Phone Number:</label>
+            <input type="tel" id="contact-phone" name="contact-phone" required>
+
+            <label for="donation-address">Pickup Address:</label>
+            <textarea name="donation-address" placeholder="Enter the pickup address" required></textarea>
+
+            <label for="clothes-type">Clothes Type:</label>
+            <select id="clothes-type" name="clothes-type" required>
+                <option value="" disabled selected>Select the type of clothes you wish to donate</option>
+                <option value="shirts">Shirts</option>
+                <option value="pants">Pants</option>
+                <option value="dresses">Dresses</option>
+                <option value="jackets">Jackets</option>
+                <option value="sweaters">Sweaters</option>
+                <option value="shoes">Shoes</option>
+                <option value="accessories">Accessories</option>
+                <option value="others">Others</option>
+            </select>
+
+            <label for="clothes-size">Clothes Size:</label>
+            <input type="text" id="clothes-size" name="clothes-size" required>
+
+            <label for="clothes-condition">Clothes Condition:</label>
+            <select id="clothes-condition" name="clothes-condition" required>
+                <option value="" disabled selected>Select the condition of the clothes</option>
+                <option value="new">New</option>
+                <option value="gently-used">Gently Used</option>
+                <option value="worn">Worn</option>
+                <option value="torn">Torn</option>
+            </select>
+
+            <label for="donation-message">Message (Optional):</label>
+            <textarea name="donation-message" placeholder="Enter a message or any special instructions"></textarea>
+
+            <input type="submit" value="Donate Now">
+        </form>
+    </div>
+</body>
+
+</html>
+

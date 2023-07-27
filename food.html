@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donor Website</title>
+  <title>Food Donation</title>
   <style>
     *{
       margin: 0px;
@@ -16,6 +16,7 @@
       text-align: center;
       padding-top: 20px;
       padding-bottom: 20px;
+      font-family: 'Times New Roman', Times, serif;
     }
     ul{
       list-style: none;
@@ -74,6 +75,77 @@
       font-size: 25px;
       margin-top: 200px;
     }
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('https://cdn.iconscout.com/icon/free/png-256/drop-down-arrow-1767484-1502446.png') no-repeat right #fff;
+            background-size: 20px;
+            background-position: 95% 50%;
+        }
+
+        
+        input[type="submit"]{
+      background-color: rgb(212, 4, 4);
+      margin-top: 30px;
+      margin-left: 130px;
+      padding-left: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 30px;
+      font-size: 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      
+    }
+
+    input[type="submit"]:hover {
+            background-color:rgb(211, 39, 39);
+        }
   </style>
 </head>
 <body>
@@ -95,6 +167,29 @@
     <p class="content">Food security has been a major concern in India. According to UN -India, there are nearly 195 million undernourished people in India, which is a quarter of the world's hunger burden. Also, roughly 43% of children in India are chronically undernourished. <br>
       A total of 79% of Indian households across 14 states which responded to the second “Hunger Watch” survey reported some form of “food insecurity” in 2021. As much as 25% of the families said that that they faced “severe food insecurity”, the survey report says. <br>
       Moreover, the most alarming figure revealed is that approximately 4500 children die every day under the age of five years in the country due to hunger and malnutrition, amounting to over three lakh deaths every year, owing to hunger, of children alone.</p>
-    
+      <div class="container">
+        <h2>Food Donation Form</h2>
+        <form action="#" method="post">
+            <label for="donor-name">Donor Name:</label>
+            <input type="text" id="donor-name" name="donor-name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+
+            <label for="contact-phone">Phone Number:</label>
+            <input type="text" id="contact-phone" name="contact-phone" required>
+
+            <label for="food-items">Food Items:</label>
+            <textarea id="food-items" name="food-items" placeholder="Please list the food items you wish to donate." required></textarea>
+
+            <label for="quantity">Quantity (in kg/lbs):</label>
+            <input type="number" id="quantity" name="quantity" min="1" step="0.1" required>
+
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="date" id="expiry-date" name="expiry-date" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
